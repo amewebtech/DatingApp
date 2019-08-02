@@ -28,6 +28,12 @@ export class AuthService {
     );
   }
 
+  loggedIn(){
+    if(this.decodedToken)
+    return true;  
+    return false;
+  }
+
   register(model: any) {
     return this.http.post(this.baseUrl + 'register' , model);
   }
