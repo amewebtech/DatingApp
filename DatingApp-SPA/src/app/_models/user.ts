@@ -13,8 +13,8 @@ export interface User {
     country: string;
 // tslint:disable-next-line: comment-format
 //Optional always after mandatory
-    interests?: string;
+    interest?: string;
     intriduction?: string;
-    lookingfor?: string;
+    lookingFor?: string;
     photos?: Photo[];
 }
